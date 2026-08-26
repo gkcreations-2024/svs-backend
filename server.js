@@ -102,7 +102,7 @@ app.post('/send-email', upload.single('pdf'), async (req, res) => {
 
     try {
         const data = await resend.emails.send({
-            from: 'Svs Crackers\\\\ <orders@svscrackers.com>',  // later own domain verify panna maathunga
+            from: 'Svs Crackers \\\\ <orders@svscrackers.com>',  // later own domain verify panna maathunga
             to: customerEmail,
             bcc: 'svscrackers.info@gmail.com',
             subject: 'Order Confirmation',
