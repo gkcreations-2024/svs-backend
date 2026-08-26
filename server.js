@@ -69,7 +69,7 @@ app.post("/place-order", async (req, res) => {
     const sequenceNumber = counter.seq;
 
     // 🔥 Format: SPP-001
-    const billNo = "SPP-" + String(sequenceNumber).padStart(3, "0");
+    const billNo = "SVS-" + String(sequenceNumber).padStart(3, "0");
 
     console.log("✅ Generated BillNo:", billNo);
 
